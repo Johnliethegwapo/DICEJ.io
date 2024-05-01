@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url('images/giphy.gif');
+                background-repeat: no-repeat;
+background-size: cover;
+            }
+
+            .container {
+                display: grid;
+                margin-bottom: 159px;
+    place-items: center;
+margin-right: 200px;
+margin-left: 35px;
+            }
+            .container2 {
+                display: grid;
+    place-items: center;
+    margin-bottom: 159px;
+            }
+
+         .Dice {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+
+         }
+
+         .Dice2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+
+         }
+
+         @keyframes rollind {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            25% {
+                transform: rotateX(445deg) rotateY(445deg);
+            } 
+            50% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            75% {
+                transform: rotateX(445deg) rotateY(445deg);
+            } 
+            100% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+        }
+        
+        @keyframes rollinda {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            25% {
+                transform: rotateX(445deg) rotateY(445deg);
+            } 
+            50% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            75% {
+                transform: rotateX(445deg) rotateY(445deg);
+            } 
+            100% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+        }
+        
+         .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            
+            transform-style: preserve-3d;
+            background:linear-gradient( 145deg, rgb(78, 10, 80), violet, #fff);
+         }
+         .face2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+          
+            transform-style: preserve-3d;
+            background:linear-gradient( 145deg, rgb(78, 10, 80), violet, #fff);
+         }
+
+         .face::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background:#6053d6;
+            transform: translateZ(-1px);
+         }
+         .face2::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background:#f6f3f0;
+            transform: translateZ(-1px);
+         }
+
+         .face::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            background: #131210;
+         }
+         .face2::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            background: #131210;
+         }
+
+         .front {
+            transform: translateZ(50px);
+         }
+
+         .back {
+            transform: rotateX(180deg) translateZ(50px); 
+         }
+
+         .top {
+            transform: rotateX(90deg) translateZ(50px); 
+         }
+
+         .bottom {
+            transform: rotateX(-90deg) translateZ(50px); 
+         }
+
+         .right {
+            transform: rotateY(90deg) translateZ(50px); 
+         }
+
+         .left {
+            transform: rotateY(-90deg) translateZ(50px); 
+         }
+
+         
+
+         .front2 {
+            transform: translateZ(50px);
+         }
+
+         .back2 {
+            transform: rotateX(180deg) translateZ(50px); 
+         }
+
+         .top2 {
+            transform: rotateX(90deg) translateZ(50px); 
+         }
+
+         .bottom2 {
+            transform: rotateX(-90deg) translateZ(50px); 
+         }
+
+         .right2 {
+            transform: rotateY(90deg) translateZ(50px); 
+         }
+
+         .left2 {
+            transform: rotateY(-90deg) translateZ(50px); 
+         }
+
+       
+         .front::after {
+            width: 30px;
+            height: 30px;
+            background:#f63330;
+            margin:-15px 0 0 -15px;
+         }
+         .front2::after {
+            width: 30px;
+            height: 30px;
+            background:#f63330;
+            margin:-15px 0 0 -15px;
+         }
+
+         .back::after {
+           margin: -35px 0 0 -30px;
+           box-shadow: 40px 0, 
+                        0 25px,
+                        40px 25px,
+                        0 50px,
+                        40px 50px;
+         }
+
+         .back2::after {
+            margin: -35px 0 0 -30px;
+            box-shadow: 40px 0, 
+                         0 25px,
+                         40px 25px,
+                         0 50px,
+                         40px 50px;
+          }
+
+         .top::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 40px;
+         }
+
+         .bottom::after {
+            margin: -36px 0 0 -36px;
+            box-shadow: 26px 26px, 
+            52px 52px,
+            52px 0,
+            0 52px;
+         }
+         .top2::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 40px;
+         }
+
+         .bottom2::after {
+            margin: -36px 0 0 -36px;
+            box-shadow: 26px 26px, 
+            52px 52px,
+            52px 0,
+            0 52px;
+         }
+
+         .right::after {
+ margin: -30px 0 0 -30px;
+ box-shadow: 40px 0,
+             0 40px, 
+             40px 40px;
+         }
+
+        .left::after {
+            margin: -35px 0 0 -35px;
+            box-shadow: 25px 25px,
+                        50px 50px;
+        }
+
+        .right2::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 0,
+                        0 40px, 
+                        40px 40px;
+                    }
+           
+                   .left2::after {
+                       margin: -35px 0 0 -35px;
+                       box-shadow: 25px 25px,
+                                   50px 50px;
+                   }
+           
+
+
+
+        .roll {
+            position: absolute;
+            cursor: pointer;
+            color: #eb03c4;
+            top: 500px;
+            left: 665px;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font: 700 16px 'Montserrat';
+       
+            transition: .4s;
+        }
+
+        .roll:hover {
+            color: #fff;
+            background: #550447;
+        }
+
+
+       
+      
+        #Score {
+            position: absolute;
+            top: 40px;
+            left: 525px;
+            color: rgb(255, 0, 170);
+            text-shadow: 0 0 10px rgb(255, 255, 405); 
+            animation: floatAnimation 2s ease-in-out infinite alternate;
+        }
+        
+        #Score2 {
+            position: absolute;
+            top: 40px;
+            right: 487px;
+            color: rgb(255, 0, 170);
+            text-shadow: 0 0 10px rgb(255, 255, 405);
+            animation: floatAnimation 2s ease-in-out infinite alternate;
+        }
+        
+        .scorecontainer {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #Start {
+           position: absolute;
+                cursor: pointer;
+                color: #65077c;
+                top: 480px;
+                left: 516px;
+                padding: 6px 12px;
+                border-radius: 10px;
+                width: 400px;
+                height: 50px;
+                font: 700 16px 'Montserrat';
+             box-shadow: 20px 15px 20px black;
+                transition: .4s;
+        }
+
+        #Start:hover {
+            
+            color: #fff;
+            background: #30033b;
+         }
+     
+         .confirmation {
+            top: 330px;
+            left: 575px;
+            position: absolute;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 2rem;
+        
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           
+        }
+        
+        .reminder-box {
+            background-color: rgb(143, 18, 24);
+            border: 2px solid rgb(117, 4, 4);
+            border-radius: 15px;
+            padding: 10px;
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+
+        .confirmation2 {
+            top: 330px;
+            left: 575px;
+            position: absolute;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 2rem;
+          
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        
+        .reminder2-box {
+            background-color: rgb(23, 1, 121);
+            border: 2px solid rgb(1, 0, 82);
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+
+        .confirmation3 {
+            top: 330px;
+            left: 635px;
+            position: absolute;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 3rem;
+          
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        
+        .reminder3-box {
+            background-color: rgb(255, 0, 149);
+            border: 2px solid rgb(99, 7, 60);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+        .reminder {
+            height: 450px;
+            width: 450px;
+            background-color: white;
+            border-radius: 20px;
+            position: absolute;
+            left: 460px;
+            top: 80px;
+            text-align: center;
+            padding: 10px;
+            border: solid gray;
+            animation: floatAnimation 2s ease-in-out infinite alternate;
+        }
+        .textsis
+        {
+            margin-top: 50px;
+           text-align: left;
+        }
+        .buttonies {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10px; 
+        }
+        .mechanic {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    
+        .CHECK {
+            margin-top: 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            background-color: rgb(13, 143, 41);
+            cursor: pointer;
+            font: 700 16px 'Montserrat';
+        
+        }
+        .CHECK:hover {
+            color:  #fff;
+            background-color: rgb(6, 110, 29);
+        }
+
+        </style>
+
+    
+
+    </head>
+    <body>
+
+        <div class="container">
+         
+        <div class="Dice">
+          
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+          
+        </div>
+
+        <Button class="roll">
+            Roll It!
+        </Button>
+    </div>
+
+    <div class="container2">
+      
+        <div class="Dice2">
+           
+            <div class="face2 front2"></div>
+            <div class="face2 back2"></div>
+            <div class="face2 top2"></div>
+            <div class="face2 bottom2"></div>
+            <div class="face2 right2"></div>
+            <div class="face2 left2"></div>
+        
+        </div>
+
+       
+    </div>
+
+<div class="scorecontainer">
+ 
+    <h1 id="Score">  </h1>
+    <h1 id="Score2">  </h1>
+</div>
+
+<div class="confirmation">
+    <div class="reminder-box">
+        <p class="reminder-text">
+           PLAYER 1 WINS! 
+        </p>
+    </div>
+</div>
+<div class="confirmation2">
+    <div class="reminder2-box">
+        <p class="reminder2-text">
+           PLAYER 2 WINS! 
+        </p>
+    </div>
+</div>
+<div class="confirmation3">
+    <div class="reminder3-box">
+        <p class="reminder3-text">
+            Draw!
+        </p>
+    </div>
+</div>
+
+
+<a href="Body.html">
+<button onclick="Start()" id="Start" href="Body.html"> Start </button>
+</a>
+
+<div class="reminder">
+    <div class="mechanic">
+        <h1>MECHANICS</h1>
+    </div>
+   
+    <div class="textsis">
+        <li> This is 2 player game.</li>
+        <br>
+        <li> Who ever reach 100 score will win</li>
+        <br>
+        <li> If a player win a gamemodes then that player will roll first, <br> He takes advantage. </li><br>
+        <li> If the score exceeded to 100, the score will be go back to the beginning. </li><br>
+        <li> Enjoy the game! </li>
+        <br><br><br> <br> 
+        <div class="buttonies">
+            <input type="checkbox" class="checkbax"> I Understand and I will have fun
+        </div>
+    </div>
+   <button class="CHECK">Enter Game</button>
+</div>
+
+    <script>
+        var checksbox = document.querySelector(".checkbax");
+        const checking = document.querySelector(".CHECK");
+        let remind = document.querySelector(".reminder");
+        checking.style.pointerEvents = "none";
+        const containerscore = document.querySelector('.scorecontainer');
+        let butt = document.getElementById("Start");
+        const dice = document.querySelector('.Dice');
+        const dice2 = document.querySelector('.Dice2');
+        const rollbutton = document.querySelector('.roll');
+        let label = document.getElementById("label");
+        let DRAW = document.querySelector(".confirmation3");
+        let Congrats = document.querySelector(".confirmation");
+        let Congrats2 = document.querySelector(".confirmation2");
+        let button1Clicked = false;
+        const bing = new Audio ('Musics/Whoosh.mp3');
+        const drum = new Audio('Musics/MAY NANALO NA!.mp3');
+        const clicking = new Audio("Musics/Click - Sound Effect (HD).mp3");
+        const back = new Audio ('Musics/Beethoven Virus - Extended.mp3');
+        
+       
+        
+        let randomize;
+        let randomize2;
+        
+Congrats.style.display = "none"
+Congrats2.style.display = "none"
+DRAW.style.display = "none";
+butt.style.display = "none";
+
+checksbox.addEventListener("change", function() {
+    if (checksbox.checked) {
+        checking.style.pointerEvents = "auto";
+    } else {
+        checking.style.pointerEvents = "none";
+    }
+});
+
+checking.addEventListener("click", function()
+{
+  remind.style.display = "none";
+  back.play();
+});
+      const Random2 = () => {
+      
+            rollbutton.style.display = "none";
+            const randomize2 = Math.floor(Math.random() * 6) + 1;
+     
+            rolldiced2(randomize2);
+        
+      }
+        const Random = () => {
+            
+                rollbutton.style.display = "none";
+                const randomize = Math.floor(Math.random() * 6) + 1;
+                rolldiced(randomize);
+
+                  if (randomize == randomize2 || randomize2 == randomize)
+        {
+            Random();
+            Random2();
+        }
+        }
+
+      
+
+        rollbutton.addEventListener("click", function() {
+            clicking.play();
+            button1Clicked = true;
+            Random();
+            Random2();
+            back.pause();
+        
+            drum.play();
+     
+         
+        });
+        
+        let handleDraw = () => {
+        Random();
+        Random2();
+            setTimeout(() => {
+                DRAW.style.display = "block";
+            }, 1000);
+            DRAW.style.display = "none";
+            butt.style.display = " none"
+            Congrats.style.display = "none";
+            Congrats2.style.display = "none";
+        }
+       
+
+   var FirstMatch = document.getElementById("Score");
+    FirstMatch = 0;
+    const rolldiced = (randomize) => {
+        dice.style.animation = "rollind 6s";
+        setTimeout (() => {
+          
+            switch (randomize) {
+                case 1: 
+                FirstMatch += 1;
+                Score.innerHTML = parseInt(FirstMatch);
+                    dice.style.transform = "rotateX(0deg) rotateY(0deg)";
+                    break;
+                case 6: 
+                if (randomize === 6)
+                {
+                    FirstMatch = 6;
+                }
+                
+                
+                  Score.innerHTML = parseInt(FirstMatch);
+                    dice.style.transform = "rotateX(180deg) rotateY(0deg)";
+                    break;
+                case 2: 
+                if (randomize === 2)
+                {
+                    FirstMatch = 2;
+                }
+                  Score.innerHTML = parseInt(FirstMatch);
+                 
+                    dice.style.transform = "rotateX(-90deg) rotateY(0deg)";
+                    break;
+                case 3: 
+                if (randomize === 3)
+                {
+
+                    FirstMatch = 3;
+                }
+                Score.innerHTML = parseInt(FirstMatch);
+                    dice.style.transform = "rotateX(0deg) rotateY(90deg)";
+                    break;
+                case 4: 
+                if (randomize === 4)
+                {
+
+                    FirstMatch = 4;
+                }
+                  Score.innerHTML = parseInt(FirstMatch);
+                    dice.style.transform = "rotateX(0deg) rotateY(-90deg)";
+                    break;
+                case 5: 
+                if (randomize === 5)
+                {
+   
+                    FirstMatch = 5;
+                }
+                  Score.innerHTML = parseInt(FirstMatch);
+                    dice.style.transform = "rotateX(90deg) rotateY(0deg)";
+                   
+                    break;
+                default: 
+                    break;
+            }
+            dice.style.animation = "none";
+            if (FirstMatch == FirstMatch2) {
+                handleDraw();
+            } else if (FirstMatch > FirstMatch2) {
+                DRAW.style.display = "none";
+                Congrats.style.display = "block";
+                Congrats2.style.display = "none";
+            } else {
+                DRAW.style.display = "none";
+                Congrats2.style.display = "block";
+                Congrats.style.display = "none";
+                butt.style.display = "block";
+            }
+
+            if (FirstMatch !== FirstMatch2) {
+                document.getElementById("Start").style.display = "block";
+            }
+
+         localStorage.setItem('value', FirstMatch);
+         bing.play();
+        }, 6050);
+    }
+    
+
+    var FirstMatch2 = document.getElementById("Score2");
+    FirstMatch2 = 0;
+    const rolldiced2 = (randomize2) => {
+        dice2.style.animation = "rollinda 6s";
+        setTimeout (() => {
+          
+            switch (randomize2) {
+                case 1: 
+                FirstMatch2 += 1;
+                  Score2.innerHTML = parseInt(FirstMatch2);
+                    dice2.style.transform = "rotateX(0deg) rotateY(0deg)";
+                    break;
+                case 6: 
+                if (randomize2 === 6)
+                {
+
+                    FirstMatch2 = 6;
+                }
+                
+                
+                 Score2.innerHTML = parseInt(FirstMatch2);
+                    dice2.style.transform = "rotateX(180deg) rotateY(0deg)";
+                    break;
+                case 2: 
+                if (randomize2 === 2)
+                {
+
+                    FirstMatch2 = 2;
+                }
+                Score2.innerHTML = parseInt(FirstMatch2);
+                 
+                    dice2.style.transform = "rotateX(-90deg) rotateY(0deg)";
+                    break;
+                case 3: 
+                if (randomize2 === 3)
+                {
+
+                    FirstMatch2 = 3;
+                }
+              Score2.innerHTML = parseInt(FirstMatch2);
+                    dice2.style.transform = "rotateX(0deg) rotateY(90deg)";
+                    break;
+                case 4: 
+                if (randomize2 === 4)
+                {
+
+                    FirstMatch2 = 4;
+                }
+                Score2.innerHTML = parseInt(FirstMatch2);
+                    dice2.style.transform = "rotateX(0deg) rotateY(-90deg)";
+                    break;
+                case 5: 
+                if (randomize2 === 5)
+                {
+
+                    FirstMatch2 = 5;
+                }
+                Score2.innerHTML = parseInt(FirstMatch2);
+                    dice2.style.transform = "rotateX(90deg) rotateY(0deg)";
+                    break;
+                default: 
+                    break;
+            }
+            if (FirstMatch == FirstMatch2) {
+                back.play();
+                handleDraw();
+            } else if (FirstMatch < FirstMatch2) {
+                back.play();
+                Congrats.style.display = "none";
+                Congrats2.style.display = "block";
+            } else {
+                back.play();
+                Congrats2.style.display = "none";
+                Congrats.style.display = "block";
+                butt.style.display = "block";
+            }
+
+            if (FirstMatch2 !== FirstMatch) {
+                document.getElementById("Start").style.display = "block";
+            }
+
+            localStorage.setItem('value2', FirstMatch2);
+          bing.play();
+        }, 6050);
+    }
+   
+    
+  </script>
+    </body>
+</html>

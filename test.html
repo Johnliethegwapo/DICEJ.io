@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+    body {
+        background-color: black ;
+        
+    }
+
+
+    .reminder {
+        height: 450px;
+        width: 450px;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        left: 460px;
+        top: 80px;
+        text-align: center;
+        padding: 10px;
+        border: solid gray;
+
+    }
+    .textsis
+    {
+        margin-top: 50px;
+       text-align: left;
+    }
+    .buttonies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px; 
+    }
+    .mechanic {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .CHECK {
+        margin-top: 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        background-color: rgb(13, 143, 41);
+        cursor: pointer;
+        font: 700 16px 'Montserrat';
+    
+    }
+    .CHECK:hover {
+        color:  #fff;
+        background-color: rgb(6, 110, 29);
+    }
+ </style>
+</head>
+<body>
+    
+    <div class="reminder">
+        <div class="mechanic">
+            <h1>MECHANICS</h1>
+        </div>
+       
+        <div class="textsis">
+            <li> This is 2 player game.</li>
+            <br>
+            <li> Who ever reach 100 score will win</li>
+            <br>
+            <li> If a player win a gamemodes then that player will roll first, <br> He takes advantage. </li><br>
+            <li> If the score exceeded to 100, the score will be go back to the beginning. </li><br>
+            <li> Enjoy the game! </li>
+            <br><br><br> <br> 
+            <div class="buttonies">
+                <input type="checkbox" class="checkbax"> I Understand and I will have fun
+            </div>
+        </div>
+       <button class="CHECK">Enter Game</button>
+    </div>
+    <script>
+        var checksbox = document.querySelector(".checkbax");
+        const checking = document.querySelector(".CHECK");
+        let remind = document.querySelector(".reminder");
+        checking.style.pointerEvents = "none";
+        checksbox.addEventListener("change", function() {
+            if (checksbox.checked) {
+                checking.style.pointerEvents = "auto";
+            } else {
+                checking.style.pointerEvents = "none";
+            }
+        });
+
+        checking.addEventListener("click", function()
+        {
+          remind.style.display = "none";
+        });
+    </script>
+</body>
+</html>

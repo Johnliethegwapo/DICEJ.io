@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gloria+Hallelujah&family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gloria+Hallelujah&family=Great+Vibes&display=swap" rel="stylesheet">
+<title>JohnLIE CASINO</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(images/CASINOO.gif);
+                background-repeat: no-repeat;
+                background-size: 1367px 650px;
+overflow: hidden;
+            }
+
+            .container {
+                display: grid;
+                margin-right: 20px;
+    place-items: center;
+    width: 250px;
+    height: 300px;
+    padding: 60px 0 40px;
+    border-radius: 30px;
+
+            }
+            .container2 {
+                display: grid;
+    place-items: center;
+    width: 250px;
+    height: 300px;
+    padding: 60px 0 40px;
+    border-radius: 30px;
+    
+            }
+            .container3 {
+                display: grid;
+    place-items: center;
+    width: 250px;
+    height: 300px;
+    padding: 60px 0 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+   
+            }
+            .container3 h1 {
+    position: absolute;
+    top: 240px;
+    font-size: 3.2rem;
+    color: gold;
+    font-family: "montserrat", cursive;
+    animation: animateText 0.5s ease forwards;
+    -webkit-text-stroke: 2px black; 
+  transition: transform 0.3s ease;
+}
+
+.container2 h1 {
+    position: absolute;
+    top: 240px;
+    font-size: 3.2rem;
+    color: gold;
+    font-family: "montserrat", cursive;
+    animation: animateText 0.5s ease forwards;
+    -webkit-text-stroke: 2px black; 
+    transition: transform 0.3s ease;
+}
+
+.container h1 {
+    position: absolute;
+    top: 240px;
+    font-size: 3.2rem;
+    color: gold;
+    font-family: "montserrat", cursive;
+  font-weight: 400;
+  font-style: normal;
+    animation: animateText 0.5s ease forwards;
+    -webkit-text-stroke: 2px black; 
+    transition: transform 0.3s ease;
+}
+
+.container3 h1:hover,
+.container2 h1:hover,
+.container h1:hover {
+    transform: scale(1.1); 
+}
+
+         .Dice {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style:preserve-3d;
+            transition: 1s ease ;
+
+         }
+
+         .Dice2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style:preserve-3d;
+            transition: 1s ease ;
+
+         }
+
+         .Dice3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style:preserve-3d;
+            transition: 1s ease ;
+
+         }
+
+         @keyframes rollind {
+            50% {
+                transform: rotateX(445deg) rotateY(445deg);
+            }
+     
+        }
+        
+        @keyframes rollinda {
+            50% {
+                transform: rotateX(445deg) rotateY(445deg);
+            }
+     
+        }
+
+        @keyframes rollindas {
+            50% {
+                transform: rotateX(445deg) rotateY(445deg);
+                
+            }
+     
+        }
+
+         .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: 5px solid gold; 
+            transform-style: preserve-3d;
+         background: linear-gradient(145deg, gold, gold, lightyellow); 
+      /* background: linear-gradient(145deg, pink, pink, rgb(255, 92, 119)); */
+         }
+         .face2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+       border: 5px solid gold; 
+        
+            transform-style: preserve-3d;
+            background: linear-gradient(145deg, gold, gold, lightyellow); 
+         }
+         .face3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: 5px solid gold; 
+            transform-style: preserve-3d;
+            background: linear-gradient(145deg, gold, gold, lightyellow); 
+         }
+
+         .face::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background:#f6f3f0;
+            transform: translateZ(-1px);
+         }
+         .face2::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background:#f6f3f0;
+            transform: translateZ(-1px);
+         }
+         .face3::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background:#f6f3f0;
+            transform: translateZ(-1px);
+         }
+
+         .face::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            background: #131210;
+         }
+         .face2::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            background: #131210;
+         }
+         .face3::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 5px;
+            background: #131210;
+         }
+         
+         
+
+         .front {
+            transform: translateZ(50px);
+         }
+
+         .back {
+            transform: rotateX(180deg) translateZ(50px); 
+         }
+
+         .top {
+            transform: rotateX(90deg) translateZ(50px); 
+         }
+
+         .bottom {
+            transform: rotateX(-90deg) translateZ(50px); 
+         }
+
+         .right {
+            transform: rotateY(90deg) translateZ(50px); 
+         }
+
+         .left {
+            transform: rotateY(-90deg) translateZ(50px); 
+         }
+
+         .front2 {
+            transform: translateZ(50px);
+         }
+
+         .back2 {
+            transform: rotateX(180deg) translateZ(50px); 
+         }
+
+         .top2 {
+            transform: rotateX(90deg) translateZ(50px); 
+         }
+
+         .bottom2 {
+            transform: rotateX(-90deg) translateZ(50px); 
+         }
+
+         .right2 {
+            transform: rotateY(90deg) translateZ(50px); 
+         }
+
+         .left2 {
+            transform: rotateY(-90deg) translateZ(50px); 
+         }
+
+         
+         .front3 {
+            transform: translateZ(50px);
+         }
+
+         .back3 {
+            transform: rotateX(180deg) translateZ(50px); 
+         }
+
+         .top3 {
+            transform: rotateX(90deg) translateZ(50px); 
+         }
+
+         .bottom3 {
+            transform: rotateX(-90deg) translateZ(50px); 
+         }
+
+         .right3 {
+            transform: rotateY(90deg) translateZ(50px); 
+         }
+
+         .left3 {
+            transform: rotateY(-90deg) translateZ(50px); 
+         }
+
+       
+         .front::after {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(to right, red, darkred);
+            margin:-15px 0 0 -15px;
+         }
+         .front2::after {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(to right, red, darkred);
+            margin:-15px 0 0 -15px;
+         }
+
+         .front3::after {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(to right, red, darkred);
+            margin:-15px 0 0 -15px;
+         }
+
+         .back::after {
+           margin: -35px 0 0 -30px;
+           box-shadow: 40px 0, 
+                        0 25px,
+                        40px 25px,
+                        0 50px,
+                        40px 50px;
+         }
+
+         .back2::after {
+            margin: -35px 0 0 -30px;
+            box-shadow: 40px 0, 
+                         0 25px,
+                         40px 25px,
+                         0 50px,
+                         40px 50px;
+          }
+          .back3::after {
+            margin: -35px 0 0 -30px;
+            box-shadow: 40px 0, 
+                         0 25px,
+                         40px 25px,
+                         0 50px,
+                         40px 50px;
+          }
+
+
+         .top::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 40px;
+         }
+
+         .bottom::after {
+            margin: -36px 0 0 -36px;
+            box-shadow: 26px 26px, 
+            52px 52px,
+            52px 0,
+            0 52px;
+         }
+         .top2::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 40px;
+         }
+
+         .bottom2::after {
+            margin: -36px 0 0 -36px;
+            box-shadow: 26px 26px, 
+            52px 52px,
+            52px 0,
+            0 52px;
+         }
+
+         .top3::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 40px;
+         }
+
+         .bottom3::after {
+            margin: -36px 0 0 -36px;
+            box-shadow: 26px 26px, 
+            52px 52px,
+            52px 0,
+            0 52px;
+         }
+
+         .right::after {
+ margin: -30px 0 0 -30px;
+ box-shadow: 40px 0,
+             0 40px, 
+             40px 40px;
+         }
+
+        .left::after {
+            margin: -35px 0 0 -35px;
+            box-shadow: 25px 25px,
+                        50px 50px;
+        }
+
+        .right2::after {
+            margin: -30px 0 0 -30px;
+            box-shadow: 40px 0,
+                        0 40px, 
+                        40px 40px;
+                    }
+           
+                   .left2::after {
+                       margin: -35px 0 0 -35px;
+                       box-shadow: 25px 25px,
+                                   50px 50px;
+                   }
+
+                   .right3::after {
+                    margin: -30px 0 0 -30px;
+                    box-shadow: 40px 0,
+                                0 40px, 
+                                40px 40px;
+                            }
+                   
+                           .left3::after {
+                               margin: -35px 0 0 -35px;
+                               box-shadow: 25px 25px,
+                                           50px 50px;
+                           }
+           
+
+
+
+        .roll {
+            cursor: pointer;
+            color: #a70b25;
+         position: absolute;
+         top: 500px;
+         left: 655px;
+            padding: 6px 12px;
+            border-radius: 9px;
+            font: 700 16px 'Montserrat';
+            border: 2px solid #a70b25;
+            transition: .4s;
+        }
+
+        .roll:hover {
+            color: #fff;
+            background: #7c071b;
+        }
+
+        .roll2 {
+            cursor: pointer;
+            color: #5312a8;
+         position: absolute;
+         top: 500px;
+         left: 655px;
+            padding: 6px 12px;
+            border-radius: 9px;
+            font: 700 16px 'Montserrat';
+            border: 2px solid #5312a8;
+            transition: .4s;
+        }
+
+        .roll2:hover {
+            color: #fff;
+            background: #410cbd;
+        }
+
+
+    
+
+    
+        .scorecontainer2 {
+        justify-content: center;
+            text-align: center;
+            position: absolute;
+            top: 60px;
+          right: 60px;
+            width: 150px;
+            height: 35px;
+            border-radius: 10px;
+            background: linear-gradient(to right, rgb(6, 80, 37), rgb(0, 114, 28));
+
+            box-shadow: 10px 10px 20px black;
+            
+        }
+     
+
+        .scorecontainer {
+            
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            width: 150px;
+            border-radius: 10px;
+            height: 35px;
+            box-shadow: 10px 10px 20px black;
+            background: linear-gradient(to right, rgb(139, 56, 8),rgb(187, 93, 5));
+        }
+
+        .endcontainer {
+            position: absolute;
+            width: 280px;
+            height: 130px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border: 1px solid black;
+        }
+        #Wintext {
+           position: absolute;
+        left: 23px;
+         top: 44px;
+         color: red;
+        }
+      
+        #input1, #input2 {
+background-color: transparent;
+          text-align: center;
+            font-size: 2rem;
+            position: absolute;
+            width: 70px;
+            height: 35px;
+            justify-content: center;
+            font-family: "Permanent Marker", cursive;
+            color: rgb(255, 255, 255);
+        }
+        #input1 {
+            left: 40px;
+        
+        }
+
+        #input2 {
+            right: 35px;
+             
+        }
+        
+        
+        /* TIC TAC TOE */
+        .cell {
+            color: darkred;
+    width: 100px;
+    height: 100px;  
+    border: 3px solid black;
+    font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+    line-height: 100px; 
+    font-size: 60px;  
+    cursor: pointer;
+ background-color: transparent;
+}
+
+.tictactoe {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+   background-color: transparent;
+border-radius: 20px     ;
+    background-size: 500px 500px;
+    width: 500px;  
+    position: absolute;
+    top: 50px; 
+    height: 500px;  
+background-image: url("images/Scroll.png");
+background-repeat: no-repeat;
+    
+animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+
+.cellcontainer {
+top: 100px;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;  
+  position: absolute;
+    transform: translateZ(0);
+}
+
+.tictactoe2 {
+    display: block;
+}
+
+#greetings {
+    margin-top: 70px;  
+    color: black;
+    font-size: 20px;  
+}
+
+#status {
+    position: absolute;
+    bottom: 70px; 
+    left: 205px; 
+    font-family: "Montserrat", cursive;
+    font-size: 1.5rem; 
+    color: red; 
+  background-color: transparent;
+   
+}
+
+      
+.playerone {
+    display: grid;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    font-size: 15px;
+}
+.playertwo{
+    display: grid;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    font-size: 15px;
+}
+
+
+.confirmation {
+    top: 290px;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+.confirmation2 {
+    top: 290px;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+.reminder-box {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.reminder-box2 {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.button {
+    background-color:rgba(21, 85, 21, 0.497);
+    
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+margin-left: 80px;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+.button2 {
+    background-color:rgba(85, 21, 21, 0.497);
+    
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+margin-left: 80px;
+}
+
+.button2:hover {
+    background-color: rgb(100, 0, 0);
+}
+
+.reminder-text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.reminder-text2 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slide-up {
+    transform: translateY(-100%);
+    transition: transform 1.5s ease-in-out;
+}
+
+.slide-down {
+    transform: translateY(700%);
+    transition: transform 1.5s ease-in-out;
+}
+
+
+
+.slideorig {
+    transform: translateY(-50%);
+    transition: transform 1.5s ease-in-out;
+}
+
+#Congratstoyou {
+    position: absolute;
+    top: 20px;
+   
+    font-size: 10rem;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.jar {
+   background: url("images/BACKGROUND.jpg");
+    background-repeat: no-repeat;
+    background-size: 750px 600px;
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    top: 3%;
+    left: 23.5%;
+    transform: translate(-50%, -50%);
+    animation: floatAnimation 2s ease-in-out infinite alternate;   
+    text-align: center;
+    color: white; 
+    border-radius: 15px;
+}
+
+.jar2,
+.jar3 {
+    border: 2px solid black;
+    height: 353.5px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
+
+.jar2 {
+    left: 235px;
+}
+
+.jar3 {
+    right: 235px;
+}
+
+.corol1,
+.corol2 {
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+.corol1 {
+background: url("images/Lava.gif");
+}
+
+.corol2 {
+    background: url("images/Water.gif");
+}
+
+
+#TXT {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: url("images/TXT.gif");
+    height: 50px;
+    width: 750px;
+    position: absolute;
+}
+
+#P1, #P2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+#W, #P {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+#W {
+    color: orangered;
+}
+
+#P {
+    color: blue;
+    left: 40px;
+}
+#P1 {
+    color: orangered;
+}
+
+#P2 {
+    color: blue;
+}
+#Scoreofdice1, #Scoreofdice2, 
+#Scoreofdice3 {
+    position: absolute;
+    top: 190px;
+}
+
+        </style>
+
+</head>
+    <body>
+        <h1 id="Congratstoyou">  </h1>
+        <div class="confirmation">
+            <div class="reminder-box">
+                <p class="reminder-text"><b>NOTE:</b> <br>
+                    Whoever wins the game will roll the dice first.</p>
+                <button onclick="play()" class="button" id="note1">Continue</button>
+            </div>
+        </div>
+
+        <div class="confirmation2">
+            <div class="reminder-box2">
+                <p class="reminder-text2"><b>NOTE:</b> <br>
+                    Whoever wins the game will roll the dice first.</p>
+                <button onclick="play2()" class="button2" id="note2">Continue</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 id="Scoreofdice1"></h1>
+        <div class="Dice">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+        </div>
+
+        <Button class="roll">
+            Roll!
+        </Button>
+    </div>
+
+    <div class="container2">
+        <h1 id="Scoreofdice2"></h1>
+        <div class="Dice2">
+            <div class="face2 front2"></div>
+            <div class="face2 back2"></div>
+            <div class="face2 top2"></div>
+            <div class="face2 bottom2"></div>
+            <div class="face2 right2"></div>
+            <div class="face2 left2"></div>
+        </div>
+        <Button class="roll2">
+            Roll!
+        </Button>
+    </div>
+
+    <div class="container3">
+<h1 id="Scoreofdice3"></h1>
+        <div class="Dice3">
+            <div class="face3 front3"></div>
+            <div class="face3 back3"></div>
+            <div class="face3 top3"></div>
+            <div class="face3 bottom3"></div>
+            <div class="face3 right3"></div>
+            <div class="face3 left3"></div>
+        </div>
+    </div>
+
+    <div class="endcontainer">
+        <h1 id="Wintext"> </h1>
+    </div>
+
+<div class="scorecontainer">
+    <input type="text" id="input1" value="0" readonly >
+    
+</div>
+
+<div class="scorecontainer2">
+    <input type="text" id="input2" value= "0" readonly>
+
+</div>
+
+<div class="jar">
+    <h2  id="TXT" >First who ever reach the top wins</h2>
+
+    
+    
+    <div class="jar2">
+        <h1 id="W">W</h1>
+        <h1 id="P1">P1</h1>
+        <div class="corol1" id="corol1"></div>
+    </div>
+    <div class="jar3">
+        <h1 id="P">P</h1>
+        <h1 id="P2">P2</h1>
+        <div class="corol2" id="corol2"></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="tictactoe">
+  <h1 id="greetings">Tic Tac Toe</h1>
+  <div class="playerone">
+  <h1>P</h1>
+  <h1>L</h1>
+  <h1>A</h1>
+  <h1>Y</h1>
+  <h1>E</h1>
+  <h1>R</h1>
+  <h1>1</h1>
+  <h1>X</h1>
+</div>
+<div class="playertwo">
+    <h1>P</h1>
+    <h1>L</h1>
+    <h1>A</h1>
+    <h1>Y</h1>
+    <h1>E</h1>
+    <h1>R</h1>
+    <h1>2</h1>
+    <h1>O</h1>
+  </div>
+  <div class="cellcontainer">
+    <div cellIndex="0" class="cell"></div>
+    <div cellIndex="1" class="cell"></div>
+    <div cellIndex="2" class="cell"></div>
+    <div cellIndex="3" class="cell"></div>
+    <div cellIndex="4" class="cell"></div>
+    <div cellIndex="5" class="cell"></div>
+    <div cellIndex="6" class="cell"></div>
+    <div cellIndex="7" class="cell"></div>
+    <div cellIndex="8" class="cell"></div>
+
+  </div>
+
+  <div class="tictactoe2">
+  <h2 id="status"></h2>
+  </div>
+
+ 
+<script>        
+    const endtext = document.querySelector('.endcontainer');
+    endtext.style.display = "none";
+    const containerscore = document.querySelector('.scorecontainer');
+    const containerscore2 = document.querySelector('.scorecontainer2');
+    const dice = document.querySelector('.Dice');
+    const dice2 = document.querySelector('.Dice2');
+    const dice3 = document.querySelector('.Dice3');
+    const rollbutton = document.querySelector('.roll');
+    const rollbutton2 = document.querySelector('.roll2');
+    let scoreofdice1 = document.getElementById("Scoreofdice1");
+    let scoreofdice2 = document.getElementById("Scoreofdice2");
+    let scoreofdice3 = document.getElementById("Scoreofdice3");
+    let Wintext = document.getElementById("Wintext");
+    let Congratss = document.getElementById("Congratstoyou");
+const displaybut = document.querySelector(".confirmation");
+const displaybut2 = document.querySelector(".confirmation2");
+Congratss.style.display = "block"
+displaybut.style.display = "none";
+displaybut2.style.display = "none";
+const audio2 = new Audio('Musics/MAY NANALO NA!.mp3');
+const battle1 = new Audio('Musics/Naruto Main Theme.mp3');
+const bing = new Audio ('Musics/Whoosh.mp3');
+
+const audio = new Audio('Musics/Halloween Theme Park.mp3');
+audio.play();
+audio.loop = true;
+const contra = new Audio ('Musics/Contra (Arcade) OST - 1987  03 - Areas 2 & 4 Base.mp3');
+const ticksound = new Audio ('Musics/Tick - Sound Effect (HD).mp3');
+const clicksound = new Audio("Musics/Click - Sound Effect (HD).mp3");
+const popsound = new Audio ('Musics/Pop Up Sound Effect Green Screen.mp3')
+const Tictachamp = new Audio ('Musics/Victory - Sound Effect (Download).mp3')
+Tictachamp.volume = 1.0;
+const contrachamp = new Audio ('Musics/Contra - Victory.mp3');
+    let button1Clicked = false;
+    let button2Clicked = false;
+    let butts = false;
+    let butts2 = false;
+    let rollingchecker = false;
+    let game2 = false;
+    let game1 = false;
+    
+
+   
+    const Random = () => {
+       
+            const random = Math.floor(Math.random() * 6) + 1; 
+            rolldiced(random);
+        
+    }
+
+    const Random2 = () => {
+
+            const random2 = Math.floor(Math.random() * 6) + 1; 
+            rolldiced2(random2);
+        
+    }
+
+    
+    const Random3 = () => {
+        const random3 = Math.floor(Math.random() * 6) + 1; 
+        rolldiced3(random3);
+    
+}
+
+const play2 = () => {
+    audio.pause();
+    contra.play();
+    clicksound.play();
+    displaybut2.style.display = "none";
+    battle1.loop = true;
+    document.body.style.backgroundImage = "url('images/Cave.gif')";
+boxofboxes.style.display = "block";
+game2 = false;
+
+}
+
+const play = () => {
+    audio.pause();
+    battle1.play();
+
+    battle1.loop = true;
+    clicksound.play();
+    displaybut.style.display = "none";
+    document.body.style.backgroundImage = "url('images/Naruto.gif')";
+    players = "X";
+    emptyOption = ["", "", "", "", "", "", "", "", ""];
+    status.textContent = `${players} turn! `;
+    cells.forEach(cells => cells.textContent = "");
+    playing = true;
+   container1.style.display = "block";
+   container2.style.display = "block";
+}
+rollbutton.addEventListener("click", rollButtonClick);
+rollbutton2.addEventListener("click", rollButton2Click);
+
+function rollButtonClick() {
+ 
+    rollbutton2.classList.add("slide-down"); 
+    Congratss.innerHTML = "";
+      scoreofdice1.innerHTML = "";
+    scoreofdice2.innerHTML = "";
+    scoreofdice3.innerHTML = "";
+    if (rollingchecker) return;
+    rollingchecker = true;
+    button1Clicked = true;
+    button2Clicked = false;
+    butts = true;
+    game1 = true;
+    if (game1 && game2 && butts && butts2)
+    {
+       
+        console.log("Checkpoint1");
+        setTimeout(() => {
+            displaybut2.style.display = "block";
+           popsound.play();
+            console.log(displaybut2.style.display)
+            Congratss.innerHTML = "";
+            audio.play();
+            rollbutton.classList.remove("slide-up");
+            rollbutton2.classList.remove("slide-up");
+            scoreofdice1.innerHTML = "";
+            scoreofdice2.innerHTML = "";
+            scoreofdice3.innerHTML = "";
+            dice.style.display = "none";
+            dice2.style.display = "none";
+            dice3.style.display = "none";
+            containerscore.style.display = "none";
+            containerscore2.style.display = "none";
+          
+            
+           
+        }, 10050);
+    }
+   
+    console.log(butts);
+    rollbutton.classList.add("slide-down"); 
+         displaybut2.style.display = "none";
+    audio.pause();
+    audio2.play();
+   
+    rollbutton2.style.display = "block";
+    if (butts && !butts2) {
+        console.log("FIRST IF OF ROLL1");
+    setTimeout(() => {
+        rollbutton2.classList.remove("slide-down");
+        rollbutton2.classList.add("slide-up");
+    }, 10000);
+} else if (!butts && butts2) {
+    console.log("SECOND ELSE IF OF ROLL1");
+    setTimeout(() => {
+        rollbutton.classList.remove("slide-down");
+        rollbutton.classList.add("slide-up");
+    }, 10000);
+}else if (game2 == false && butts && butts2) {
+    console.log("THIRD IF OF ROLL1");
+    setTimeout(() => {
+        Congratss.innerHTML = "";
+        audio.play();
+        popsound.play();
+        rollbutton.classList.remove("slide-up");
+        rollbutton2.classList.remove("slide-up");
+        scoreofdice1.innerHTML = "";
+        scoreofdice2.innerHTML = "";
+        scoreofdice3.innerHTML = "";
+        dice.style.display = "none";
+        dice2.style.display = "none";
+        dice3.style.display = "none";
+        containerscore.style.display = "none";
+        containerscore2.style.display = "none";
+        displaybut.style.display = "block";
+    }, 10050);
+    console.log("butts: " + butts)
+    console.log("butts2: " + butts2)
+    console.log("gane2: " + game2)
+} 
+    setTimeout(() => {
+        rollingchecker = false;
+        audio.play();
+    }, 9000);
+   
+    Random();
+    Random2();
+    Random3();
+}
+
+function rollButton2Click() {
+    rollbutton.classList.add("slide-down"); 
+    Congratss.innerHTML = "";
+    scoreofdice1.innerHTML = "";
+    scoreofdice2.innerHTML = "";
+    scoreofdice3.innerHTML = "";
+    if (rollingchecker) return;
+    rollingchecker = true;
+    button2Clicked = true;
+    button1Clicked = false;
+    butts2 = true;
+    game1 = true;
+    if (game1 && game2 && butts && butts2)
+    {
+      
+        console.log("Checkpoint2");
+        setTimeout(() => {
+            displaybut2.style.display = "block";
+            popsound.play();
+            console.log(displaybut2.style.display)
+            Congratss.innerHTML = "";
+            audio.play();
+            rollbutton.classList.remove("slide-up");
+            rollbutton2.classList.remove("slide-up");
+            scoreofdice1.innerHTML = "";
+            scoreofdice2.innerHTML = "";
+            scoreofdice3.innerHTML = "";
+            dice.style.display = "none";
+            dice2.style.display = "none";
+            dice3.style.display = "none";
+            containerscore.style.display = "none";
+            containerscore2.style.display = "none";
+        
+        }, 10050);
+    }
+ 
+    console.log(butts2);
+    rollbutton2.classList.add("slide-down"); 
+  
+  
+    audio.pause();
+    audio2.play();
+
+    rollbutton.style.display = "block";
+    if (!butts && butts2) {
+        console.log("FIRST IF OF ROLL1");
+    setTimeout(() => {
+        rollbutton.classList.remove("slide-down");
+        rollbutton.classList.add("slide-up");
+    }, 10000);
+} else if (butts && !butts2) {
+    console.log("SECOND IF OF ROLL1");
+    setTimeout(() => {
+        rollbutton2.classList.remove("slide-down");
+        rollbutton2.classList.add("slide-up");
+    }, 10000);
+} else if (game2 == false && butts && butts2) {
+    console.log("THIRD IF OF ROLL1");
+    setTimeout(() => {
+        Congratss.innerHTML = "";
+        audio.play();
+        popsound.play();
+        rollbutton.classList.remove("slide-up");
+        rollbutton2.classList.remove("slide-up");
+        scoreofdice1.innerHTML = "";
+        scoreofdice2.innerHTML = "";
+        scoreofdice3.innerHTML = "";
+        dice.style.display = "none";
+        dice2.style.display = "none";
+        dice3.style.display = "none";
+        containerscore.style.display = "none";
+        containerscore2.style.display = "none";
+        displaybut.style.display = "block";
+    }, 10050);
+    console.log("butts: " + butts)
+    console.log("butts2: " + butts2)
+    console.log("gane2: " + game2)
+} 
+
+    setTimeout(() => {
+        rollingchecker = false;
+        audio.play();
+    }, 9000);
+   
+    Random();
+    Random2();
+    Random3();
+}
+
+    let FirstMatches = parseInt(localStorage.getItem('value'));
+   let SecondMatches = parseInt(localStorage.getItem('value2'));
+
+   if (FirstMatches > SecondMatches)
+   {
+      rollbutton2.style.display = "none";
+      rollbutton.style.display = "block";
+   } else if (FirstMatches < SecondMatches)
+   {
+    rollbutton.style.display = "none";
+    rollbutton2.style.display = "block";
+   }
+   var Finalscore = parseInt(document.getElementById("input1").value);
+   
+    let rollscore = 0;
+    let first = 0;
+    let partialscore = 0;
+    const rolldiced = random => {
+        dice.style.animation = "rollind 4s";
+      Finalscore = 0;
+        setTimeout(() => {
+            switch (random) {
+                case 1:
+                    if (random === 1) {
+                        Finalscore += 1;
+                       
+                        console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 1;
+                        first = 1;
+                    }
+                    dice.style.transform = "rotateX(0deg) rotateY(0deg)";
+                    break;
+                case 6:
+                    if (random === 6) {
+                        Finalscore += 6;
+                        first += Finalscore;
+                          console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 6;
+                        first = 6;
+                    }
+                    dice.style.transform = "rotateX(180deg) rotateY(0deg)";
+                    break;
+                case 2:
+                    if (random === 2) {
+                        Finalscore += 2;
+                        first += Finalscore;
+                          console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 2;
+                        first = 2;
+                    }
+                    dice.style.transform = "rotateX(-90deg) rotateY(0deg)";
+                    break;
+                case 3:
+                    if (random === 3) {
+                        Finalscore += 3;
+                        first += Finalscore;
+                          console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 3;
+                        first = 3;
+                    }
+                    dice.style.transform = "rotateX(0deg) rotateY(90deg)";
+                    break;
+                case 4:
+                    if (random === 4) {
+                        Finalscore += 4
+                        first += Finalscore;
+                          console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 4;
+                        first = 4;
+                    }
+                    dice.style.transform = "rotateX(0deg) rotateY(-90deg)";
+                    break;
+                case 5:
+                    if (random === 5) {
+                        Finalscore += 5;
+                        first += Finalscore;
+                          console.log("Finalscore = " + Finalscore);
+                        partialscore = random;
+                    } else {
+                        Finalscore = 5;
+                        first = 5;
+                    }
+                    dice.style.transform = "rotateX(90deg) rotateY(0deg)";
+                    break;
+                default:
+                    break;
+            }
+            scoreofdice1.innerHTML = Finalscore;
+            dice.style.animation = "none";
+            bing.play();
+            bing.volume = 1;
+        }, 4050);
+    }
+    
+    
+
+    var Finalscore2 = parseInt(document.getElementById("input2").value);
+   
+    let second = 0;
+    let partialscore2 = 0;
+  
+    const rolldiced2 = random2 => {
+    dice2.style.animation = "rollinda 4s";
+        
+        Finalscore2 = 0;
+        setTimeout(() => {
+            switch (random2) {
+                case 1:
+                    if (random2 === 1) {
+                        Finalscore2 += 1;
+                        second += Finalscore2;
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+                        Finalscore2 = 1;
+                        second = 1;
+                    }
+                    dice2.style.transform = "rotateX(0deg) rotateY(0deg)";
+                    break;
+                case 6:
+                    if (random2 === 6) {
+                       
+                        Finalscore2 += 6;
+                        second += Finalscore2;
+                        partialscore2 = parseInt(random2);
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+                        second = 6;
+                        Finalscore2 = 6;
+                    }
+                    dice2.style.transform = "rotateX(180deg) rotateY(0deg)";
+                    break;
+                case 2:
+                    if (random2 === 2) {
+                        Finalscore2 += 2;
+                        second += Finalscore2;
+                        partialscore2 = parseInt(random2);
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+
+Finalscore2 = 2;
+                        second = 2;
+                    }
+                    dice2.style.transform = "rotateX(-90deg) rotateY(0deg)";
+                    break;
+                case 3:
+                    if (random2 === 3) {
+                       
+                        Finalscore2 += 3;
+                        second += Finalscore2;
+                        partialscore2 = parseInt(random2);
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+                        Finalscore2 = 3;
+                        second = 3;
+                    }
+                    dice2.style.transform = "rotateX(0deg) rotateY(90deg)";
+                    break;
+                case 4:
+                    if (random2 === 4) {
+                    
+                        Finalscore2 += 4;
+                        second += Finalscore2;
+                        partialscore2 = parseInt(random2);
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+                        Finalscore2 = 4;
+                        second = 4;
+                    }
+                    dice2.style.transform = "rotateX(0deg) rotateY(-90deg)";
+                    break;
+                case 5:
+                    if (random2 === 5) {
+                        
+                        Finalscore2 += 5;
+                        second += Finalscore2;
+                        partialscore2 = parseInt(random2);
+                        console.log("Finalscore2 = " + Finalscore2);
+                    } else {
+                        Finalscore2 = 5;
+                        second = 5;
+                    }
+                    dice2.style.transform = "rotateX(90deg) rotateY(0deg)";
+                    break;
+                default:
+                    break;
+            }
+            scoreofdice2.innerHTML = Finalscore2;
+            dice2.style.animation = "none";
+            setTimeout(() => {
+            bing.play();
+            bing.volume = 1;
+        }, 200);
+        }, 5050);
+    }
+ 
+
+    let partialscore3 = 0;
+    let Finalscore3 = 0;
+    let totales = 0;
+    let totales2 = 0;
+    const rolldiced3 = random3 => {
+    dice3.style.animation = "rollindas 4s";
+    setTimeout(() => {
+        switch (random3) {
+            case 1:
+                Finalscore3 = 1; 
+                dice3.style.transform = "rotateX(0deg) rotateY(0deg)";
+                break;
+            case 2:
+                Finalscore3 = 2; 
+                dice3.style.transform = "rotateX(-90deg) rotateY(0deg)";
+                break;
+            case 3:
+                Finalscore3 = 3;
+                dice3.style.transform = "rotateX(0deg) rotateY(90deg)";
+                break;
+                
+            case 4: 
+              Finalscore3 = 4;
+dice3.style.transform ="rotateX(0deg) rotateY(-90deg)";
+break;
+             case 5:
+               Finalscore3 = 4;
+dice3.style.transform = "rotateX(90deg) rotateY(0deg)";
+
+case 6:
+  Finalscore3 = 6;
+dice3.style.transform = "rotateX(180deg) rotateY(0deg)";
+break;
+          
+            default:
+                break;
+        }
+
+        updateTotalScore();
+        scoreofdice3.innerHTML = Finalscore3;
+        dice3.style.animation = "none";
+        setTimeout(() => {
+            bing.play();
+            bing.volume = 1;
+        }, 300);
+        
+    }, 6050);
+};
+
+const updateTotalScore = () => {
+    if (button1Clicked) {
+        let totalScore = parseInt(input1.value); 
+        let fakescore = parseInt(input1.value); 
+        fakescore = Finalscore + Finalscore2 + Finalscore3
+        totalScore += Finalscore + Finalscore2 + Finalscore3;
+        if (totalScore > 100)
+        {
+            totalScore -= 100;
+        } else if (totalScore == 100)
+        {
+            alert("Player1 Wins")
+        }
+        Congratss.innerHTML = fakescore;
+        input1.value = totalScore;
+        console.log("total: " + input1.value);
+        console.log("Finalscore 3 isssssssss: " + Finalscore3);
+        button1Clicked = true;
+        
+    } else if (button2Clicked) {
+        let totalScore = parseInt(input2.value);
+        let fakescore = parseInt(input2.value); 
+        fakescore = Finalscore + Finalscore2 + Finalscore3
+        totalScore += Finalscore2 + Finalscore + Finalscore3
+        if (totalScore > 100)
+        {
+            totalScore -= 100;
+        } else if (totalScore == 100)
+        {
+            alert("Player1 Wins")
+        }
+        Congratss.innerHTML = fakescore;
+        input2.value = totalScore;
+        button2Clicked = true;
+        console.log("total2: " + input2.value);
+        console.log("Finalscore 3 isssssssss: " + Finalscore3);
+    }
+}     
+   
+
+
+
+
+
+
+//FOR TIC TAC TOE
+
+
+ const container1 = document.querySelector(".tictactoe");
+ container1.style.display = "none";
+ const container2 = document.querySelector(".tictactoe2");
+ container2.style.display = "none";
+const cells = document.querySelectorAll(".cell");
+const status = document.querySelector("#status");
+
+
+
+
+
+
+const winnumber = [
+   [0, 1, 2],
+   [3, 4, 5],
+   [6, 7, 8],
+
+   [0, 3, 6],
+   [1, 4, 7],
+   [2, 5, 8],
+
+   [0, 4, 8],
+   [2, 4, 6]
+    ]
+
+let emptyOption = ["", "", "", "", "", "", "", "", ""];
+let players = "X";
+let playing = false;
+
+game();
+
+function game() {
+  cells.forEach(cells => cells.addEventListener("click", cellgotclicked));
+
+
+  status.textContent =` ${players} turns!`
+
+  playing = true;
+}
+
+function cellgotclicked() {
+  const cellindex = this.getAttribute("cellIndex");
+
+  if (emptyOption[cellindex] != "" || !playing) {
+    return;
+  }
+
+  updates(this, cellindex);
+  winner();
+}
+
+function updates(cell, index)
+{
+  emptyOption[index] = players;
+  cell.textContent = players;
+}
+
+function changeplayers()
+{
+  players = (players == "X") ? "O" : "X";
+  status.textContent =` ${players} turns`
+console.log(status);
+}
+
+function winner()
+{
+  let roundwon = false;
+
+  for (let i = 0; i < winnumber.length; i++)
+  {
+
+    const condition = winnumber[i];
+    const CellrowA = emptyOption[condition[0]];
+    const CellrowB = emptyOption[condition[1]];
+    const CellrowC = emptyOption[condition[2]];
+
+    if (CellrowA == "" || CellrowB == "" || CellrowC == "")
+    {
+      continue;
+    }
+
+    if (CellrowA == CellrowB && CellrowB == CellrowC)
+    {
+      roundwon = true;
+      battle1.pause();
+      Tictachamp.play();
+      break;
+    }
+  }
+
+  if (roundwon)
+  {
+    status.textContent = `${players} Wins! `;
+    butts = false;
+    butts2 = false;
+    game2 = true;
+    playing = false;
+    console.log("butts become" + butts);
+    console.log("butts2 become" + butts2);
+    console.log("GAME2 become " + game2)
+    if (!butts && !butts2) {
+    setTimeout(() => {
+     
+        container1.style.display = "none";
+        container2.style.display = "none";
+        displaybut.style.display = "none";
+        dice.style.display = "block";
+        dice2.style.display = "block";
+        dice3.style.display = "block";
+        containerscore.style.display = "block";
+        containerscore2.style.display = "block";
+        game2 = true;
+        document.body.style.backgroundImage = "url(images/CASINOO.gif)";
+       
+        if (players === "X") {
+            battle1.pause();
+            battle1.currentTime = 0;
+            audio.currentTime = 0;
+            audio.play();
+            rollbutton.innerHTML = "Roll!";
+            rollbutton2.innerHTML = "Roll!";
+          
+            setTimeout(() => {
+                         
+                rollbutton.classList.remove("slide-down");
+                rollbutton.classList.add("slide-up");
+                rollbutton.addEventListener("click", rollButtonClick);
+            }, 500); 
+           
+        } else if (players === "O") {
+             battle1.pause();
+            battle1.currentTime = 0;
+            audio.currentTime = 0;
+            audio.play();
+            rollbutton.innerHTML = "Roll!";
+            rollbutton2.innerHTML = "Roll!";
+          
+            setTimeout(() => {
+                         
+                rollbutton2.classList.remove("slide-down");
+                rollbutton2.classList.add("slide-up");
+                rollbutton2.addEventListener("click", rollButton2Click);
+            }, 500); 
+           
+        }
+    }, 4050); 
+
+  
+}
+
+  } else if (!emptyOption.includes("")) {
+    status.textContent =` DRAW!`
+    setTimeout (() => {
+    players = "X";
+    emptyOption = ["", "", "", "", "", "", "", "", ""];
+    status.textContent = `${players} turn! `;
+
+    cells.forEach(cells => cells.textContent = "");
+
+    playing = true;
+}, 2050);
+  } else {
+    changeplayers();
+  }
+}
+
+
+//gamemode 2
+
+let heightColor1 = 0; 
+        let heightColor2 = 0; 
+       let boxes11 = document.getElementById('corol1');
+       let boxes2 = document.getElementById('corol2');
+        let player1Won = false;
+let player2Won = false;
+         const boxofboxes = document.querySelector('.jar');
+        const container1Height = document.querySelector('.jar2').offsetHeight;
+        const container2Height = document.querySelector('.jar3').offsetHeight;
+        boxofboxes.style.display ="none";
+        const keys = {
+            w: { 
+                pressed: false
+            },
+            p: { 
+                pressed: false
+            }
+        };
+
+        const resetBoxHeights = () => {
+            heightColor1 = 0;
+            heightColor2 = 0;
+            boxes11.style.height = '0px';
+            boxes2.style.height = '0px';
+        };
+
+        const resetGame = () => {
+            resetBoxHeights();
+            player1Won = false;
+            player2Won = false;
+        };
+
+        
+        document.addEventListener('keydown', (e) => {
+    if (player1Won || player2Won) {
+        return; 
+    }
+
+    switch (e.key) {
+        case 'w':
+            keys.w.pressed = true;
+            
+            if (heightColor1 + 10 <= container1Height) {
+                heightColor1 += 10;
+                boxes11.style.height = heightColor1 + 'px';
+                if (heightColor1 >= 350) {
+                    contra.pause();
+                    contrachamp.play();
+                    butts = false;
+                    butts2 = false;
+                    game2 = false;
+                    console.log("GAME2 become " + game2)
+                    console.log("butts become" + butts);
+                    console.log("butts2 become" + butts2);
+                    player1Won = true;
+
+                    if (!butts && !butts2) {
+                      
+                        console.log("Player1 " + player1Won);
+                        setTimeout(() => {
+                       
+                           contra.pause();
+                           contra.currentTime = 0;
+                           audio.currentTime = 0;
+contrachamp.pause();
+contrachamp.currentTime = 0;
+                           audio.play();
+                            boxofboxes.style.display ="none";
+                            displaybut.style.display = "none";
+                            displaybut2.style.display = "none";
+                            dice.style.display = "block";
+                            dice2.style.display = "block";
+                            dice3.style.display = "block";
+                            containerscore.style.display = "block";
+                            containerscore2.style.display = "block";
+                            document.body.style.backgroundImage = "url(images/CASINOO.gif)";
+                            rollbutton.innerHTML = "Roll!";
+                            rollbutton2.innerHTML = "Roll!";
+        
+                            setTimeout(() => {
+                         
+                                rollbutton.classList.remove("slide-down");
+                                rollbutton.classList.add("slide-up");
+                                rollbutton.addEventListener("click", rollButtonClick);
+                            }, 500);
+                            resetGame();
+                        }, 4050); 
+                    
+                      
+                    }
+                }
+
+                
+            }
+            break;
+        case 'p':
+            keys.p.pressed = true;
+           
+            if (heightColor2 + 10 <= container2Height) {
+                heightColor2 += 10;
+                boxes2.style.height = heightColor2 + 'px';
+                if (heightColor2 >= 350) {
+                    contra.pause();
+                    contrachamp.play();
+                    butts = false;
+                    butts2 = false;
+                    game2 = false;
+                    console.log("GAME2 become " + game2)
+                    console.log("butts become" + butts);
+                    console.log("butts2 become" + butts2);
+                    player2Won = true;
+
+                    if (!butts && !butts2) {
+                      
+                        console.log("Player2 " + player2Won);
+                        setTimeout(() => {
+                            
+                           contra.pause();
+                           contrachamp.pause();
+                           contrachamp.currentTime = 0;
+                           contra.currentTime = 0;
+                           audio.currentTime = 0;
+                           audio.play();
+                            boxofboxes.style.display ="none";
+                            displaybut.style.display = "none";
+                            displaybut2.style.display = "none";
+                            dice.style.display = "block";
+                            dice2.style.display = "block";
+                            dice3.style.display = "block";
+                            containerscore.style.display = "block";
+                            containerscore2.style.display = "block";
+                            document.body.style.backgroundImage = "url(images/CASINOO.gif)";
+                            rollbutton.innerHTML = "Roll!";
+                            rollbutton2.innerHTML = "Roll!";
+        
+                            setTimeout(() => {
+                         
+                                rollbutton2.classList.remove("slide-down");
+                                rollbutton2.classList.add("slide-up");
+                                rollbutton2.addEventListener("click", rollButton2Click);
+                            }, 500);
+                            resetGame();
+                        }, 4050); 
+                    
+                      
+                    }
+                }
+
+                
+            }
+            break;
+    }
+});
+
+document.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'w':
+            keys.w.pressed = false;
+            if (!keys.p.pressed && heightColor1 >= 5) {
+       
+                document.getElementById('corol1').style.he1ight = heightColor1 + 'px';
+            }
+            break;
+        case 'p':
+            keys.p.pressed = false;
+            if (!keys.w.pressed && heightColor2 >= 5) { 
+             
+                document.getElementById('corol2').style.height = heightColor2 + 'px';
+            }
+            break;
+    }
+});
+
+
+  </script>
+ 
+    </body>
+</html>
